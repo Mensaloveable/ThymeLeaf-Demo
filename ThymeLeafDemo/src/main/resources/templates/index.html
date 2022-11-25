@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+</head>
+<body>
+<p>Enter details below</p>
+<form action="/sign_up" method="post">
+    <input type="text" th:field="${}" placeholder="First Name">
+    <input type="text" th:field="${}" placeholder="Last Name">
+    <input type="text" th:field="${}" placeholder="Email">
+    <p>Gender</p>
+    <div>
+        Male <input type="radio" th:field="${}" th:value="MALE">
+        Female <input type="radio" th:field="${}" th:value="FEMALE">
+    </div>
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+</form>
+</body>
+</html>
