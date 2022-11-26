@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+</head>
+<body>
+<form action="/projects/save" method="post" th:object="${project}">
+    <input type="text" placeholder="Project Name" th:field="${project.name}">
+    <select th:field="${project.status}">
+        <option th:value="PENDING" >PENDING</option>
+        <option th:value="IN_PROGRESS" >IN_PROGRESS</option>
+        <option th:value="DONE">DONE</option>
+    </select>
+    <textarea type="text" placeholder="Enter Project Description" th:field="${project.description}" cols="30" rows="10"></textarea>
+    <button type="submit">Create Project</button>
+</form>
+</body>
+</html>
