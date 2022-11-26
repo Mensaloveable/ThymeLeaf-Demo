@@ -1,31 +1,8 @@
-<!--<!DOCTYPE html>-->
-<!--<html lang="en" xmlns:th="http://www.thymeleaf.org">-->
-<!--<head>-->
-<!--    <meta charset="UTF-8">-->
-<!--    <title>Home Page</title>-->
-<!--</head>-->
-<!--<body>-->
-<!--<p>Enter details below</p>-->
-<!--<form action="/sign_up" method="post" th:object="${user}">-->
-<!--    <div>-->
-<!--    <input type="text" th:field="${user.firstName}" placeholder="First Name">-->
-<!--    </div>-->
-<!--    <div>-->
-<!--    <input type="text" th:field="${user.lastName}" placeholder="Last Name">-->
-<!--    </div>-->
-<!--    <div>-->
-<!--    <input type="email" th:field="${user.email}" placeholder="Email">-->
-<!--    </div>-->
-<!--    <div>-->
-<!--    <input type="password" th:field="${user.password}" placeholder="Password">-->
-<!--    </div>-->
-<!--    <p>Gender</p>-->
-<!--    <div>-->
-<!--        Male <input type="radio" th:field="${user.gender}" th:value="MALE">-->
-<!--        Female <input type="radio" th:field="${user.gender}" th:value="FEMALE">-->
-<!--    </div>-->
-<!--    <button type="submit">Submit</button>-->
-<!--    <button type="reset">Reset</button>-->
-<!--</form>-->
-<!--</body>-->
-<!--</html>-->
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layouts :: head"></head>
+<body>
+<nav th:replace="layouts :: nav"></nav>
+
+</body>
+</html>

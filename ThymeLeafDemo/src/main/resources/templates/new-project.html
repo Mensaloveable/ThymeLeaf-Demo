@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head>
-    <meta charset="UTF-8">
-    <title>Home Page</title>
-</head>
+<head th:replace="layouts :: head"></head>
 <body>
+<nav th:replace="layouts :: nav"></nav>
 <form action="/projects/save" method="post" th:object="${project}">
     <input type="text" placeholder="Project Name" th:field="${project.name}">
     <select th:field="${project.status}">
